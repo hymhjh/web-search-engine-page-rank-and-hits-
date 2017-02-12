@@ -24,7 +24,7 @@ public class cache {
 	public boolean contains(String word){
 		return this.invertedlist.containsKey(word);
 	}
-	
+
 	public void put(String word, Byte[] df, int size){
 		while(this.cache_size + size > this.maximum_cache_size){
 			System.out.println("cache is full:" + this.cache_size);
